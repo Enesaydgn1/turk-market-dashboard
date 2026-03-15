@@ -39,7 +39,7 @@ export default function CategoryChart() {
           </Pie>
           <Tooltip
             contentStyle={{ backgroundColor: "#111827", border: "none" }}
-            formatter={(v: number) => [`%${v}`, "Oran"]}
+            formatter={(v) => [`%${v}`, "Oran"]}
           />
           <Legend />
         </PieChart>
