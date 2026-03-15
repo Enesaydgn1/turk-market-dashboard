@@ -36,7 +36,7 @@ export default function SalesChart() {
           <YAxis stroke="#9ca3af" tickFormatter={(v) => `₺${v / 1000}k`} />
           <Tooltip
             contentStyle={{ backgroundColor: "#111827", border: "none" }}
-            formatter={(v: number) => [`₺${v.toLocaleString()}`, "Satış"]}
+            formatter={(v) => [`₺${Number(v).toLocaleString()}`, "Satış"]}
           />
           <Area
             type="monotone"
